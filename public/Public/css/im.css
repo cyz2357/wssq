@@ -1,0 +1,152 @@
+/* 浠ｇ爜鏁寸悊锛氭噿浜轰箣瀹� www.lanrenzhijia.com */
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+	color: #484343;
+}
+body.homepage {
+	background: #fff;
+}
+body, button, select, textarea, input {
+	font-family: "Microsoft Yahei", Arial;
+	font-size: 12px;
+}
+img {
+	border: 0;
+}
+li {
+	list-style-type: none;
+}
+a:link {
+	color: #444444;
+	text-decoration: none;
+}
+a:visited {
+	color: #444444;
+	text-decoration: none;
+}
+a:hover {
+	color: #be191f;
+	text-decoration: none;
+}
+.clearfix {
+	clear:both;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.mr10 {
+	margin-right: 10px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.serviceleft {
+	cursor: pointer;
+	right: 0;
+	position: fixed;
+	top: 180px;
+	width: 100px;
+}
+.si_serviceleft {
+	position:relative;
+}
+.si_serviceleft1, .si_serviceleft2 {
+	position:absolute;
+	right:0px;
+}
+.si_serviceleft1 {
+	height:115px;
+	width:35px;
+	background:url(../images/si_serviceleft3.png) no-repeat;
+	display:none;
+}
+.si_serviceleft .si_serviceleft2 {
+}
+.si_serviceleft .si_serviceleft2 ul {
+	background:url(../images/si_serviceleft2.png) no-repeat;
+	width:79px;
+	padding:0 0 5px 0;
+}
+.si_serviceleft2 ul li {
+	display:block;
+	text-indent:-9999px;
+	background:url(../images/si_serviceleft_03.png) no-repeat;
+	text-align:center;
+	width:79px;
+}
+.si_serviceleft2 ul li a {
+	color:#fff;
+	display:block;
+	width:78px;
+}
+.si_serviceleft2 .si_serviceleftLI {
+	background:none;
+	padding:0;
+}
+.si_serviceleft2 .si_serviceleftLI:hover {
+	background:none;
+}
+.si_serviceleft2 .si_serviceleftLI a {
+	background:none;
+	padding:42px 0;
+}
+.si_serviceleft2 .si_serviceleftLI a:hover {
+	background:none;
+}
+.si_serviceleft2 .si_serviceleftLI1 {
+	background-position:0px -2px;
+}
+.si_serviceleft2 .si_serviceleftLI2 {
+	background-position:0px -75px;
+	margin:3px 0;
+}
+.si_serviceleft2 .si_serviceleftLast {
+	background-position:0px -162px;
+}
+.si_serviceleft2 .si_serviceleftLI1, .si_serviceleft2 .si_serviceleftLI1 a {
+	height:67px;
+}
+.si_serviceleft2 .si_serviceleftLI2, .si_serviceleft2 .si_serviceleftLI2 a {
+	height:86px;
+	margin:3px 0;
+}
+.si_serviceleft2 .si_serviceleftLast, .si_serviceleft2 .si_serviceleftLast a {
+	height:74px;
+}
+.si_serviceleft2 img {
+	margin-left:58px;
+	display:block;
+}
+.si_serviceleftLast {
+	position:relative;
+	z-index:100;
+}
+.si_serviceleftLast div {
+	position:absolute;
+	left:-235px;
+	top:-90px;
+	display:none
+}
+.si_serviceleftLI2 {
+	position:relative;
+	z-index:100;
+}
+.si_serviceleftLI2 div {
+	position:absolute;
+	left:-235px;
+	top:-90px;
+	display:none
+}
+.qixia {
+	float:right;
+	margin: 5px 10px 0 0;
+	font-size:14px;
+}
+.qixia a {
+	color:#D8442A;
+}
+/* 浠ｇ爜鏁寸悊锛氭噿浜轰箣瀹� www.lanrenzhijia.com */

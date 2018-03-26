@@ -1,0 +1,145 @@
+<!--[if IE 7]>
+    <div class="ie_bar">
+        您现在使用的浏览器版本过低，可能会导致部分图片和信息的缺失，建议您安装360极速浏览器或升级到IE8以上版本<a href="http://down.360safe.com/cse/360cse_8.1.0.428.exe" target="_blank">下载并安装360极速浏览器</a>
+    </div>
+<![endif]-->
+<span style="display:none;"><script src="https://s4.cnzz.com/z_stat.php?id=1261565474&web_id=1261565474" language="JavaScript"></script></span>
+
+
+<div class="pc">
+<div class="top_bar">
+	<div class="top_bar_box">
+		<div class="top_left">
+			<!--<div class="tel_focus">客服热线：<span class="red">{$Think.config.HOTLINE}</span></div>-->
+		</div>
+		<div class="top_right">
+			<ul class="nav_more">
+
+				<li><a href="/agent/User/user" id="personal_html">个人中心</a></li>
+
+			</ul>
+			<ul class="nav_user">
+				<notempty name="Think.session.phone">
+					<li><a href="/agent/user/user">您好，<span style="color:#f55;" id="username" class="username">{$Think.session.username}</span></a></li>
+					<!-- <li id="message_li" <empty name="Think.session.message">style="display:none;"</empty>><a href="/{$Request.module}/{$Request.controller}/message">消息<span class="header_message" id="header_message">&nbsp;</span></a></li> -->
+					<li><a href="/agent/Login/logout" >退出</a></li>
+				<else />
+					<li><a href="" class="nav_login">登录</a></li>
+					<li><a href="" class="nav_register">注册</a></li>
+				</notempty>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--top导航NED-->
+<div class="white">
+<div class="nav_box">
+	<!--<h1 class="logo_agent">-->
+		<!--厦门盈透投资<a href="/agent/index/index"></a>-->
+	<!--</h1>-->
+	<div class="header_nav" id="header_nav">
+	<ul>
+		<li><a href="/agent/index/index"  id="index_html">首页</a></li>
+		<li>
+			<!--<a href="/agent/product/product" id="product_html">产品介绍</a>-->
+			<!--<dl class="drop">-->
+				<!--<dd><a href="/product/aqihuo/aqihuo/type/hsi">恒生指数</a></dd>-->
+				<!--<dd><a href="/product/aqihuo/aqihuo/type/mhi">小恒指数</a></dd>-->
+				<!--<dd><a href="/product/aqihuo/aqihuo/type/cl">原油期货</a></dd>-->
+				<!--<dd><a href="/product/aqihuo/aqihuo/type/gc">美国黄金</a></dd>-->
+			<!--</dl>-->
+		</li>
+		<!--<li><a href="/agent/pay/dqihuo" id="dqihuo_html">国内期货</a></li>-->
+
+		<!--<li><a href="/picture/picture/picture" id="picture_html">盈透风采</a></li>-->
+		<!--<li><a href="/agent/download/download_pc" id="download_html">软件下载</a></li>-->
+		<li><a href="/agent/news/news" id="news_html">行业资讯</a></li>
+		<!--<li><a href="/agent/help/help" id="help_html">帮助中心</a></li>-->
+		<!--<li><a href="/about/about/about" id="about_html">关于我们</a></li>	&lt;!&ndash;<li><a href="/product/shares/shares" id="shares_html">股票配资</a></li>&ndash;&gt;-->
+		<!--<li>-->
+			<!--<a href="/department/department/department" id="department_html">公司部门</a>-->
+			<!--<dl class="drop">-->
+				<!--<dd><a href="/department/department/department#jiaoyi">交易部门</a></dd>-->
+				<!--<dd><a href="/department/department/department#xingzheng">行政部门</a></dd>-->
+				<!--<dd><a href="/department/department/department#pinxuan">品宣部门</a></dd>-->
+				<!--<dd><a href="/department/department/department#caiwu">财务部门</a></dd>-->
+				<!--<dd><a href="/department/department/department#peixun">培训部门</a></dd>-->
+			<!--</dl>-->
+		<!--</li>-->
+
+
+		<!-- <li><a href="http://live.xmyttz.cn" id="live_html">理财直播</a></li> -->
+		<!-- <li><a href="/{$Request.module}/{$Request.controller}/yingtou" id="nav_yingtou">赢投宝</a></li> -->
+		<!-- <li><a href="/{$Request.module}/{$Request.controller}/school" id="nav_school">盈透学院</a></li> -->
+		<!-- <li class="nav_new"><a id="nav_online">#直播#</a></li>  -->
+		<!-- <li><a href="/{$Request.module}/{$Request.controller}/activity" id="nav_activity">活动专区</a></li> -->
+	</ul>
+</div>
+
+</div>
+	<!--<div style="margin: 0px 21px -2px 77px;;position: absolute;top:77px;z-index: 100;font-size: 16px;color:red;font-weight: 700"    width=80%  >公告：十九大已顺利闭幕，有关金融投资类规范须暂停使用第三方，现响应国家要求，本网站将于11月20号左右关闭所有第三方通道，如需线上提款请于以上日期前提取，本网站将不再直接接收终端客户充值，后期将全部改用线下网银方式，请咨询原有代理。</div>-->
+</div>
+
+<style>#{$Request.action}_html{color:#268bf2;}</style>
+</div>
+<div id="img" style="display: none">
+	<img style="" src="/Public/img/gg.png" alt="">
+</div>
+<!-- 移动端 -->
+<div id="list" style="display:none;">
+	<ul>
+		<li class="li1"><a href="/agent/index/index">首页</a></li>
+		<li class="li2"><a href="/agent/goods/goods">期货参数</a></li>
+		<li class="li3"><a href="/agent/advantage/advantage">公司特色</a></li>
+		<li class="li4"><a href="/agent/user/user">个人中心</a></li>
+		<li class="li1"><a href="/agent/login/logout">退出</a></li>
+	</ul>
+</div>
+<div class="mt_content">
+<div id="header_bottom">
+	 <ul>
+		<li><a href="/agent/index/index" class="to_index"><img src="/Public/img/to_index.png" alt="">首页</a></li>
+		<!--<li><a href="/agent/product/product" class="to_goods"><img src="/Public/img/to_trade.png" alt="">产品介绍</a></li>-->
+		<!--<li><a href="/agent/download/download" class="to_download"><img src="/Public/img/to_find.png" alt="">软件下载</a></li>-->
+		 <li><a href="/agent/news/news" class="to_news"><img src="/Public/img/to_find.png" alt="">行业资讯</a></li>
+		 <!--<li><a href="/agent/help/help" class="to_help"><img src="/Public/img/to_find.png" alt="">帮助中心</a></li>-->
+		  <li><a href="/agent/user/user" class="to_me"><img src="/Public/img/to_me.png" alt="">我</a></li>
+	 </ul>
+</div>
+<style>.to_{$Think.server.HTTP_POST}{background:#268bf2;color:#fff !important;}</style>
+</div>
+<!-- 移动端  END-->
+<!-- 遮罩 -->
+<img src="/Public/img/loading.jpg" alt="" id="loading_img">
+<div id="overlay"></div>
+<div id="error_system">
+	<div class="error_system_box">
+		<img src="/Public/img/error.png" alt=""><div class="error_system_content"><p id="error_system_text"></p></div>
+	</div>
+</div>
+<script>
+$('.nav_register').click(function () {
+    alert('网站升级中，注册功能暂停使用，具体恢复时间请等待通知。');
+})
+$('.nav_login').click(function () {
+    alert('网站升级中，注册功能暂停使用，具体恢复时间请等待通知。');
+})
+</script>
+<!--<script>-->
+    <!--var results=window.location.href.match(new RegExp("http://www.xmyttz.cn"));-->
+    <!--var results1=window.location.href.match(new RegExp("http://xmyttz.cn"));-->
+
+    <!--if(results||results1){-->
+        <!--$('#img').show();-->
+        <!--showOverlay();-->
+    <!--}-->
+    <!--$('body').bind('click', function(event) {-->
+        <!--hideOverlay();-->
+        <!--// IE支持 event.srcElement ， FF支持 event.target-->
+        <!--var evt = event.srcElement ? event.srcElement : event.target;-->
+        <!--if(evt.id == 'img' ) return; // 如果是元素本身，则返回-->
+        <!--else {-->
+            <!--$('#img').hide(); // 如不是则隐藏元素-->
+        <!--}-->
+    <!--});-->
+<!--</script>-->

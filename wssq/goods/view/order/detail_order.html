@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <include file="../wssq/view/adminHead.html"/>
+</head>
+<body>
+<div id="right">
+    <div class="right_nav"><a href="javascript:history.back();">【返回列表】</a></div>
+    <div class="right_content">
+
+        <input type="hidden" value="{$deposit.id}" id="deposit_id" >
+        <input type="hidden" value="{$deposit.out_orderid}" id="deposit_out_orderid">
+        <p><span class="left_inp_name">订单号：</span><input type="text" value="{$deposit.out_orderid}" class="text" readOnly="true"></p>
+        <p><span class="left_inp_name">商品名称：</span><input type="text" value="{$deposit.goods_name}" class="text" readOnly="true" ></p>
+        <p><span class="left_inp_name">商品数量：</span><input type="text" value="{$deposit.num}" class="text" readOnly="true" ></p>
+        <p><span class="left_inp_name">姓名：</span><input type="text" value="{$deposit.name}" class="text" readOnly="true" id="deposit_name"></p>
+        <p><span class="left_inp_name">支付金额（元）：</span><input type="text" id="amount" value="{$deposit.amount}元" class="text" readOnly="true"></p>
+        <notempty name="deposit.cardprovince">
+            <p><span class="left_inp_name">省：</span><input type="text" value="{$deposit.cardprovince}" class="text input_city" readOnly="true"><span class="left_inp_name city_inp_name">市：</span><input type="text" value="{$deposit.cardcity}" class="text input_city" readOnly="true"><span class="left_inp_name city_inp_name">县：</span><input type="text" value="{$deposit.county}" class="text input_city" readOnly="true"></p>
+
+        </notempty>
+        <p><span class="left_inp_name">客户详细地址：</span><input type="text" value="{$deposit.address}" class="text " readOnly="true"></p>
+        <p><span class="left_inp_name">送货时间：</span>
+            <if condition="$deposit.time eq 1"><input type="text" value="工作日、双休日与假日均可送货" class="text" readOnly="true"><elseif condition="$deposit.time eq 2"><input type="text" value="只工作日送货（双休日、假日不用送）" class="text" readOnly="true" ><else ><input type="text" value="只双休日、假日送货（工作日不用送）" class="text" readOnly="true"></else></elseif></if>
+        </p>
+        <p><span class="left_inp_name">客户手机号：</span><input type="text" name="user_phone" id="kehu_phone" value="{$deposit.phone}" class="text" readOnly="true"></p>
+        <notempty name="deposit.gddh">
+            <p><span class="left_inp_name">客户固定电话：</span><input type="text" value="{$deposit.gddh}" class="text input_city" readOnly="true"></p>
+        </notempty>
+        <p><span class="left_inp_name">申请时间：</span><input type="text" value="{$deposit.sendtime}" class="text" readOnly="true"></p>
+        <p><span class="left_inp_name">客户留言：</span><input type="text" value="{$deposit.message}" class="text" readOnly="true"></p>
+        <a  class="right_btn capital_btn" id="success_deposit">订单确认</a>
+        <!--<a href="" class="right_btn capital_btn" id="error_deposit">订单错误</a>-->
+    </div>
+</div>
+</body>
+</html>

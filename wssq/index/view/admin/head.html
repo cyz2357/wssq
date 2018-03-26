@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<include file="../wssq/view/adminHead.html"/>
+</head>
+<body>
+<div id="header">
+	<img src="{$Request.root}/Public/img/admin/header_left.png" class="logo"></img>
+	<ul>
+		<if condition="($admin.prompt eq 1)">
+			<li><audio id="deposit_music" src="{$Request.root}/Public/music/deposit.mp3"  loop="loop">你的浏览器不支持音频播放。</audio></li>
+			<li><a href="/goods/order/sq_order" target="right" id="to_deposit">订单<span id="deposit">{$head.deposit}</span><img src="{$Request.root}/Public/img/tishi.gif" alt="" id="rujin_bell"></a></li>
+		</if>
+		<li><a href="/index/Login/logout" target="_parent">安全退出</a></li>
+
+	</ul>
+</div>
+<script>
+    <!-- localStorage.bell_num=0; -->
+    <!-- localStorage.bell_ys='on'; -->
+</script>
+</body>
+</html>

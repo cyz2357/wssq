@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<include file="../wssq/view/adminHead.html"/>
+</head>
+<body>
+	<div id="left">
+		<foreach name="title" item="v">
+		<div>
+			<h3 class="had_click">{$v}<span></span></h3>
+			<ul>
+			<foreach name="list[$key]" item="list_v">
+				<li><a href="/{$list_v.module}/{$list_v.url}" target="right" id="in{$list_v.url|substr=2}">{$list_v.name}</a></li>
+			</foreach>
+			</ul>
+		</div>
+		</foreach>
+	</div>
+</body>
+</html>

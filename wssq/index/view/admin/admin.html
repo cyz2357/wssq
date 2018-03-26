@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<include file="../wssq/view/adminHead.html"/>
+</head>
+	<frameset border=0 framespacing=0 rows="73, *" frameborder=0>
+        <frame name="head" src="/{$Request.module}/{$Request.controller}/head" frameborder=0 noresize scrolling=no>
+		<frameset cols="220, *">
+			<frame name="left" src="/{$Request.module}/{$Request.controller}/left" frameborder=0 noresize />
+			<frame name="right" src="/{$Request.module}/{$Request.controller}/right" frameborder=0 noresize scrolling=yes />
+		</frameset>
+    </frameset>
+    <noframes>
+    </noframes>
+</html>
